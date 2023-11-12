@@ -392,10 +392,15 @@ function varinit() {
   // $("#Ivalue").spinner("value", 0.01);
 
   $('#voltage1Slider').slider("disable"); 
+  $('#voltage1Spinner').spinner("disable"); 
   $('#voltage2Slider').slider("disable"); 
+  $('#voltage2Spinner').spinner("disable"); 
   $('#resistor1Slider').slider("disable"); 
+  $('#resistor1Spinner').spinner("disable"); 
   $('#resistor2Slider').slider("disable"); 
+  $('#resistor2Spinner').spinner("disable"); 
   $('#resistorfSlider').slider("disable"); 
+  $('#resistorfSpinner').spinner("disable"); 
 
   $("#add-to-table-btn").prop("disabled", true);
   $("#result-btn").prop("disabled", true);
@@ -571,10 +576,15 @@ function v0Assign(volt) {
 
 function startSimulation(){
   $('#voltage1Slider').slider("enable");
+  $('#voltage1Spinner').spinner("enable");
   $('#voltage2Slider').slider("enable");
+  $('#voltage2Spinner').spinner("enable");
   $('#resistor1Slider').slider("enable"); 
+  $('#resistor1Spinner').spinner("enable"); 
   $('#resistor2Slider').slider("enable"); 
+  $('#resistor2Spinner').spinner("enable"); 
   $('#resistorfSlider').slider("enable"); 
+  $('#resistorfSpinner').spinner("enable"); 
   $("#simulate-btn").prop("disabled", true);
   $("#add-to-table-btn").prop("disabled", false);
   $("#result-btn").prop("disabled", false);
